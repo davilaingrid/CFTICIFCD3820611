@@ -26,7 +26,7 @@ You must have a function app to host the execution of your functions. A function
    | **Runtime stack**     | Preferred language   | Choose a runtime that supports your favorite function programming language. Choose **.NET** for C# and F# functions. |
    | **Region**            | Preferred region     | Choose a region near you or near other services your functions access. |
 
-1. Select the **Next : Hosting >** button and enter the following settings for hosting.
+4. Select the **Next : Hosting >** button and enter the following settings for hosting.
 
    | Setting              | Suggested value            | Description                                                  |
    | -------------------- | -------------------------- | ------------------------------------------------------------ |
@@ -34,9 +34,11 @@ You must have a function app to host the execution of your functions. A function
    | **Operating system** | Preferred operating system | An operating system is pre-selected for you based on your runtime stack selection, but you can change the setting if necessary. |
    | **Plan**             | Consumption plan           | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. |
 
-2. Select **Review + Create** to review the app configuration selections.
+   
 
-3. Select **Create** to provision and deploy the function app. When the deployment is complete select **Go to resource** to view your new function app.
+5. Select **Review + Create** to review the app configuration ![demo0201](demo0201.png)selections.
+
+6. Select **Create** to provision and deploy the function app. When the deployment is complete select **Go to resource** to view your new function app.
 
 Next, you'll create a function in the new function app.
 
@@ -44,23 +46,25 @@ Next, you'll create a function in the new function app.
 
 1. Expand your new function app, then select the **+** button next to **Functions**.
 
-   ![img](https://www.skillpipe.com/api/2.1/content/urn:uuid:88438492-2a00-5769-bee1-e4c9ebc889fb@2020-12-12T08:30:18Z/OEBPS/Images/906096-363543.png)
+   ![demo0202](demo0202.png)
 
 2. Select the **In-portal** development environment, and select **Continue**.
 
-3. Choose **WebHook + API** and then select **Create**.
+3. Choose **HttpTrigger1** and then select **Create**.
 
-A function is created using a language-specific template for an HTTP triggered function.
+A function is created using a language-specific template for an HTTP triggered function.![demo0203](demo0203.png)
 
 ##### Test the function
 
-1. In your new function, click **</> Get function URL** at the top right.
+![demo0204](demo0204.png)
 
-   ![img](https://www.skillpipe.com/api/2.1/content/urn:uuid:88438492-2a00-5769-bee1-e4c9ebc889fb@2020-12-12T08:30:18Z/OEBPS/Images/906097-363544.png)
+![demo0205](demo0205.png)
+
+1. In your new function, click **</> Get function URL** at the top right.
 
 2. In the dialog box that appears select **default (Function key)**, and then click **Copy**.
 
-3. Paste the function URL into your browser's address bar. Add the query string value &name=<yourname> to the end of this URL and press the Enter key on your keyboard to execute the request. You should see the response returned by the function displayed in the browser.
+3. Paste the function URL into your browser's address bar. Add the query string value &name=<yourname> to the end of this URL and press the Enter key on your keyboard to execute the request. You should see the response returned by the function displayed in the browser.![demo0206](demo0206.png)
 
 4. When your function runs, trace information is written to the logs. To see the trace output from the previous execution, return to your function in the portal and click the arrow at the bottom of the screen to expand the **Logs**.
 
