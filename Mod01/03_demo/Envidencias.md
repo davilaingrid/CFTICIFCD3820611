@@ -12,9 +12,11 @@ This demo shows you how to deploy your app to Azure App Service from a local Git
    git clone https://github.com/Azure-Samples/html-docs-hello-world.git
    ```
 
-   
+   ![demo0301](demo0301.png)
 
    Later in the demo you'll be entering more commands in the Git Bash window so be sure to leave it open.
+
+   ![demo0301](demo0302.png)
 
 2. Launch the Azure Cloud Shell and be sure to select the **Bash** environment.
 
@@ -26,33 +28,27 @@ In the Cloud Shell run the following commands to create the web app and the nece
 
 1. Create a resource group:
 
-   
-
    ```
-   az group create --location <MyLocation> --name <MyResourceGroup>
+az group create --location <MyLocation> --name <MyResourceGroup>
    ```
-
    
+   ![demo0301](demo0304.png)
 
 2. Create an app service plan:
-
-   
 
    ```
    az appservice plan create --name <MyPlan> --resource-group <MyResourceGroup>
    ```
 
-   
+   ![demo0301](demo0305.png)
 
 3. Create the web app:
-
-   
 
    ```
    az webapp create --name <MyUniqueApp> --resource-group <MyResourceGroup> --plan <MyPlan>  --deployment-local-git
    ```
-
    
+   ![demo0301](demo0306.png)
 
 #### Deploy with Kudu build server
 
@@ -62,15 +58,17 @@ The first two steps in this section are performed in the Cloud Shell, the third 
 
 1. Configure a deployment user.
 
-   
+   If not provided a --password argument, you receive a prompt to input the password. (**Recommended**)
 
    ```
-   az webapp deployment user set \
-       --user-name <username> \
-       --password <password>
+   az webapp deployment user set --user-name <username> --password <password>
+   
+   az webapp deployment user set --user-name <username>
    ```
 
-   
+   ```
+   az webapp deployment user show
+   ```
 
    - The username must be unique within Azure, and for local Git pushes, must not contain the ‘@’ symbol.
    - The password must be at least eight characters long, with two of the following three elements: letters, numbers, and symbols.
@@ -78,28 +76,28 @@ The first two steps in this section are performed in the Cloud Shell, the third 
 
    Record your username and password to use to deploy your web apps.
 
+   ![demo0301](demo0309.png)
+
 2. Get the web app deployment URL, the deployment URL is used in the Git Bash window to connect your local Git repository to the web app:
 
-   
-
    ```
-   az webapp deployment source config-local-git --name <MyUniqueApp> --resource-group <MyResourceGroup>
+az webapp deployment source config-local-git --name <MyUniqueApp> --resource-group <MyResourceGroup>
    ```
-
    
+   ![demo0301](demo0308.png)
 
    The command will return JSON similar to the example below, you'll use the URL in the Git Bash window in the next step.
 
    ```
-   {
+{
    "url": "https://<deployment-user>@<MyUniqueApp>.scm.azurewebsites.net/<MyUniqueApp>.git"
    }
    ```
-
+   
    ```
-   az webapp deployment source show --name <MyUniqueApp> --resource-group <MyResourceGroup>
+az webapp deployment source show --name <MyUniqueApp> --resource-group <MyResourceGroup>
    ```
-
+   
    
 
 3. Deploy the web app:
@@ -110,17 +108,19 @@ The first two steps in this section are performed in the Cloud Shell, the third 
 
    Use the following command to connect the repository to the Web App:
 
+   **NOTE:** you could make something change in index.html to review your changes in a cloud.
+   
    ```
    git remote add azure <url>
    ```
 
    Use the following command to push the to the Azure remote:
-
+   
    ```
    git push azure master
    ```
-
    
+   ![demo0301](demo0310.png)
 
 ##### What happens to my app during deployment?
 
@@ -137,6 +137,8 @@ In the Azure Portal navigate to the web app you created above:
 1. In the **Overview** section select the **URL** to verify the app was deployed successfully.
 2. Select **Deployment Center** to view deployment information.
 
+![demo0301](demo0311.png)
+
 From here you can make change to the code in the local repository and push the change to the web app.
 
 #### Clean up resources
@@ -144,5 +146,6 @@ From here you can make change to the code in the local repository and push the c
 In the Cloud Shell use the following command to delete the resource group and the resources it contains. The --no-wait portion of the command will return you to the Bash prompt quickly without showing you the results of the command. You can confirm the resource group was deleted in the Azure Portal
 
 ```
-az group delete --name <MyResourceGroup> --no-wait
+az group delete --name <MyResourceGroup> --no-wait --yes
 ```
+

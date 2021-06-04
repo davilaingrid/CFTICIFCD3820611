@@ -25,7 +25,7 @@ This demo is performed in the Cloud Shell using the Bash environment.
 
 1. In the Cloud Shell, create a *demo* directory and then change to it.
 
-   
+   ![](demo0201.png)
 
    ```
    mkdir demoHTML
@@ -33,7 +33,7 @@ This demo is performed in the Cloud Shell using the Bash environment.
    cd $HOME/demoHTML
    ```
 
-   
+   ![](demo0202.png)
 
 2. Run the following command to clone the sample app repository to your *demoHTML* directory.
 
@@ -57,7 +57,7 @@ This demo is performed in the Cloud Shell using the Bash environment.
    az webapp up --location <region> --name <app_name> --html
    ```
 
-   
+   ![](demo0203.png)
 
    This command may take a few minutes to run. While running, it displays information similar to the example below. Make a note of the resourceGroup value. You need it for the clean up resources section.
 
@@ -81,6 +81,8 @@ This demo is performed in the Cloud Shell using the Bash environment.
 
 2. Open a browser and navigate to the app URL (http://<app_name>.azurewebsites.net) and verify the app is running. Leave the browser open on the app for the next section.
 
+   ![](demo0204.png)
+
 #### Update and redeploy the app
 
 1. In the Cloud Shell, type nano index.html to open the nano text editor. In the <h1> heading tag, change “Azure App Service - Sample Static HTML Site” to "Azure App Service".
@@ -89,7 +91,7 @@ This demo is performed in the Cloud Shell using the Bash environment.
 
 3. Redeploy the app with the same az webapp up command. Be sure to use the same *region* and *app_name* as you used earlier.
 
-   
+   ![](demo0205.png)
 
    ```
    az webapp up --location <region> --name <app_name> --html
@@ -99,14 +101,15 @@ This demo is performed in the Cloud Shell using the Bash environment.
 
 4. Once deployment is completed switch back to the browser from step 2 in the “Create the web app” section above and refresh the page.
 
+![](demo0206.png)
+
 #### Clean up resources
 
 1. After completing the demo you can delete the resources you created using the resource group name you noted in step 1 of the “Create the web app” section above.
 
+   ```
+   az group delete --name <resource_group> --no-wait --yes
+   ```
    
 
-   ```
-   az group delete --name <resource_group> --no-wait
-   ```
-
-   
+![](demo0207.png)
