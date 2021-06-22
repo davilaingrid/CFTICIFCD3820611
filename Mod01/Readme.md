@@ -5,6 +5,11 @@
 ![architecture_01](ZZ-lab/architecture_01.png)
 
 **Resultado de la creación de los App Service Web y Api: **
+
+![lab0102](ZZ-lab/Captura1.png)
+
+
+
 ![lab0102](ZZ-lab/lab0102.png)
 
 **Connection String to storage account:**
