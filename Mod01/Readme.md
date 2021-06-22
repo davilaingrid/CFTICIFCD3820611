@@ -10,11 +10,18 @@ Creando una Storage account
 
 ![Captura](ZZ-lab/Captura.PNG)
 
-Creando una Web App
+
+Creando una Web App imgapidavilaingrid
 
 ![Captura](ZZ-lab/Captura1.PNG)
 
+
 ![Captura2](ZZ-lab/Captura2.PNG)
+
+
+Creando una Web App imgwebdavilaingrid
+
+![Captura2](ZZ-lab/Captura3.PNG)
 
 
 ![lab0102](ZZ-lab/lab0102.png)
