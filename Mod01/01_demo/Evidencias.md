@@ -27,23 +27,61 @@ In this demo you will learn how to create a Web App by using the Azure Portal.
 
 5. Navigate to the **Monitoring** tab at the top of the page and toggle **Enable Application Insights** to **No**.
 
-   ![](demo0101.png)
+   ![](Captura.png)
+
+   
+
+   ![](Captura1.png)
+
+
+
+![](Captura2.png)
+
+
+
+![](Captura3.png)
 
 6. Select **Review and Create** to navigate to the review page, then select **Create** to create the app. The portal will display the deployment page, where you can view the status of your deployment.
 
 7. Once the app is ready you can select the **Go to resource** button and the portal will display the web app overview page. To preview your new web app's default content, select its URL at the top right. The placeholder page that loads indicates that your web app is up and running and ready to receive deployment of your app's code.
 
-   ![](demo0102.png)
+![](Captura4.png)
 
-![](demo0103.png)
+![](Captura5.png)
 
-![](demo0104.png)
 
-#### Clean up resources
 
-1. In the Azure Portal select **Resource groups**.
-2. **Select** the name of the resource group you created above.
-3. **Select** the **Delete resource group** button at the top of the Overview page.
-4. You will be prompted to enter the resource group name to verify you want to delete it. Enter the name of the resource group and select **Delete**.
+![](Captura6.png)
 
-   
+
+
+
+
+
+
+![](Captura8.png)
+
+
+
+![](Captura9.png)
+
+
+
+![](Captura10.png)
+
+
+
+![](Captura11.png)
+
+
+
+![](Captura12.png)
+
+
+
+![](Captura13.png)
+
+
+
+![](Captura14.png)
+

@@ -25,15 +25,13 @@ This demo is performed in the Cloud Shell using the Bash environment.
 
 1. In the Cloud Shell, create a *demo* directory and then change to it.
 
-   ![](demo0201.png)
+   ![](Captura2.1.png)
 
    ```
    mkdir demoHTML
    
    cd $HOME/demoHTML
    ```
-
-   ![](demo0202.png)
 
 2. Run the following command to clone the sample app repository to your *demoHTML* directory.
 
@@ -43,7 +41,9 @@ This demo is performed in the Cloud Shell using the Bash environment.
    git clone https://github.com/Azure-Samples/html-docs-hello-world.git
    ```
 
-   
+   ![](Captura2.2.png)
+
+
 
 #### Create the web app
 
@@ -57,7 +57,7 @@ This demo is performed in the Cloud Shell using the Bash environment.
    az webapp up --location <region> --name <app_name> --html
    ```
 
-   ![](demo0203.png)
+   ![](Captura2.3.png)
 
    This command may take a few minutes to run. While running, it displays information similar to the example below. Make a note of the resourceGroup value. You need it for the clean up resources section.
 
@@ -77,11 +77,21 @@ This demo is performed in the Cloud Shell using the Bash environment.
    }
    ```
 
+   ![](Captura2.4.png)
+
+   
+
+   ![](Captura2.5.png)
+
+   
+
    
 
 2. Open a browser and navigate to the app URL (http://<app_name>.azurewebsites.net) and verify the app is running. Leave the browser open on the app for the next section.
 
-   ![](demo0204.png)
+   ![](Captura2.7.png)
+
+
 
 #### Update and redeploy the app
 
@@ -91,13 +101,13 @@ This demo is performed in the Cloud Shell using the Bash environment.
 
 3. Redeploy the app with the same az webapp up command. Be sure to use the same *region* and *app_name* as you used earlier.
 
-   ![](demo0205.png)
+   ![](Captura7.png)
 
    ```
    az webapp up --location <region> --name <app_name> --html
    ```
 
-   
+   ![](Captura8.png)
 
 4. Once deployment is completed switch back to the browser from step 2 in the “Create the web app” section above and refresh the page.
 
@@ -110,6 +120,5 @@ This demo is performed in the Cloud Shell using the Bash environment.
    ```
    az group delete --name <resource_group> --no-wait --yes
    ```
-   
 
-![](demo0207.png)
+![](Captura2.6.png)
