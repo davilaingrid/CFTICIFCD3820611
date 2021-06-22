@@ -6,7 +6,13 @@
 
 **Resultado de la creación de los App Service Web y Api: **
 
+Creando una Storage account
+
 ![Captura](ZZ-lab/Captura.PNG)
+
+Creando una Web App
+
+![Captura](ZZ-lab/Captura1.PNG)
 
 ![Captura2](ZZ-lab/Captura2.PNG)
 
