@@ -24,11 +24,14 @@ Creando una Web App imgwebdavilaingrid
 ![Captura2](ZZ-lab/Captura3.PNG)
 
 
+
 **Configuracion de la API Web**
 ![Captura4](ZZ-lab/Captura4.PNG)
 
+
+
 **Configuración de la Web App**
-![lab0101](ZZ-lab/lab0100.png)
+![Captura5](ZZ-lab/Captura5.PNG)
 
 **Código Az-CLI para desplegar el api rest**
 
