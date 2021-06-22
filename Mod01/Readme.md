@@ -10,6 +10,7 @@
 
 ![Captura2](ZZ-lab/Captura2.png)
 
+
 ![lab0102](ZZ-lab/lab0102.png)
 
 **Connection String to storage account:**
