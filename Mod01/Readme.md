@@ -34,20 +34,20 @@ Creando una Web App imgwebdavilaingrid
 
 **Código Az-CLI para desplegar el api rest**
 
-![Captura5](ZZ-lab/Captura6.PNG)
-
+![Captura6](ZZ-lab/Captura6.PNG)
 
 
 **Código Az-CLI para desplegar el web app**
 
-``` 
-az webapp deployment source config-zip --resource-group ManagedPlatform --src web.zip --name imgwebbmvb0101
-```
+![Captura8](ZZ-lab/Captura8.PNG)
 
 
 **Comprobación que las web api funcione correctamente **
-![lab0105](ZZ-lab/lab0105.png)
+![Captura7](ZZ-lab/Captura7.PNG)
+
 
 **Comprobación que la web app funcione correctamente **
-![lab0104](ZZ-lab/lab0104.png)
+![Captura9](ZZ-lab/Captura9.PNG)
 
+
+![Captura10](ZZ-lab/Captura10.PNG)
