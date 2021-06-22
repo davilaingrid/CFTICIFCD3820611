@@ -33,8 +33,6 @@ Creando una Function App:
 
 ![Captura3](ZZ-lab/Captura3.PNG)
 
-![Captura4](ZZ-lab/Captura4.PNG)
-
 ![Captura5](ZZ-lab/Captura5.PNG)
 
 ![Captura6](ZZ-lab/Captura6.PNG)
