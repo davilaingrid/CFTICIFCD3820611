@@ -6,9 +6,9 @@
 
 **Resultado de la creación de los App Service Web y Api: **
 
-![Captura](ZZ-lab/Captura.png)
+![Captura](ZZ-lab/Captura.PNG)
 
-![Captura2](ZZ-lab/Captura2.png)
+![Captura2](ZZ-lab/Captura2.PNG)
 
 
 ![lab0102](ZZ-lab/lab0102.png)
