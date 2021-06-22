@@ -24,22 +24,8 @@ Creando una Web App imgwebdavilaingrid
 ![Captura2](ZZ-lab/Captura3.PNG)
 
 
-![lab0102](ZZ-lab/lab0102.png)
-
-**Connection String to storage account:**
-
-```
-DefaultEndpointsProtocol=https;AccountName=imgstorbmvb0101;AccountKey=9vLzgybKXZpaUYa2SJbVqNQFXa187qOYWXlj/sbzZ5a38TrfnRHlqtWKH5z2EyNtlHVTk8M/ry9WPVDLRnrYzw==;EndpointSuffix=core.windows.net
-```
-
-**URL WEB API:**
-
-```
-https://imgapibmvb01.azurewebsites.net
-```
-
 **Configuracion de la API Web**
-![lab0100](ZZ-lab/lab0101.png)
+![Captura4](ZZ-lab/Captura4.PNG)
 
 **Configuración de la Web App**
 ![lab0101](ZZ-lab/lab0100.png)
