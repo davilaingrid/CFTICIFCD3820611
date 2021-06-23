@@ -23,7 +23,8 @@ In this demo, you will learn to perform the following actions:
    docker pull mcr.microsoft.com/dotnet/core/samples:aspnetapp
    ```
 
-   
+   ![Captura](images/Captura.PNG)
+
 
 3. Verify that the image has been stored locally.
 
@@ -33,7 +34,9 @@ In this demo, you will learn to perform the following actions:
    docker image list
    ```
 
-   
+   ![Captura1](images/Captura1.PNG)
+
+   ![Captura2](images/Captura2.PNG)
 
    You should see a repository named *mcr.microsoft.com/dotnet/core/samples* with a tag of *aspnetapp*.
 
@@ -45,9 +48,14 @@ In this demo, you will learn to perform the following actions:
    docker run -d -p 8080:80 mcr.microsoft.com/dotnet/core/samples:aspnetapp
    ```
 
+![Captura3](images/Captura3.PNG)
+
+![Captura4](images/Captura4.PNG)
    
 
 5. Open a web browser and go to the page for the sample web app at [http://localhost:8080](http://localhost:8080/).
+
+![Captura5](images/Captura5.PNG)
 
 #### Examine the container in the local Docker registry
 
@@ -67,6 +75,8 @@ In this demo, you will learn to perform the following actions:
    CONTAINER ID        IMAGE                                COMMAND                  CREATED             STATUS              PORTS                  NAMES bffd59ae5c22        mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet aspnetapp.dll"   12 seconds ago      Up 11 seconds       0.0.0.0:8080->80/tcp   competent_hoover
    ```
 
+   ![Captura6](images/Captura6.PNG)
+
    The **COMMAND** field shows the container started by running the command *dotnet aspnetapp.dll*. This command invokes the .NET Core runtime to start the code in the aspnetapp.dll (the code for the sample web app). The *PORTS* field indicates port 80 in the image was mapped to port 8080 on your computer. The *STATUS* field shows the application is still running. Make a note of the container's *NAME*.
 
    Attach or start a command line inside container: (cmd for windos, bin/bash for linux):
@@ -81,7 +91,8 @@ In this demo, you will learn to perform the following actions:
    docker cp <FILE> <CONTAINER ID>
    ```
 
-   
+![Captura7](images/Captura7.PNG)
+
 
 2. Stop the Docker container. Specify the container name for the web app in the following command, in place of <NAME>.
 
@@ -89,7 +100,6 @@ In this demo, you will learn to perform the following actions:
    docker container stop <NAME>
    ```
 
-   
 
 3. Verify that the container is no longer running. The following command shows the status of the container as *Exited*. The -a flag shows the status of all containers, not just those that are still running.
 
@@ -98,6 +108,10 @@ In this demo, you will learn to perform the following actions:
    ```
    docker ps -a
    ```
+
+![Captura8](images/Captura8.PNG)
+
+![Captura9](images/Captura9.PNG)
 
    
 
@@ -113,7 +127,7 @@ In this demo, you will learn to perform the following actions:
    docker container rm <NAME>
    ```
 
-   
+   ![Captura10](images/Captura10.PNG)
 
 2. Verify that the container has been removed with the following command. The command should no longer list the container.
 
@@ -133,7 +147,11 @@ In this demo, you will learn to perform the following actions:
    docker image list
    ```
 
+![Captura11](images/Captura11.PNG)
    
+![Captura12](images/Captura12.PNG)
+
+![Captura13](images/Captura13.PNG)
 
 4. Remove the image from the registry.
 
@@ -143,6 +161,7 @@ In this demo, you will learn to perform the following actions:
    docker image rm mcr.microsoft.com/dotnet/core/samples:aspnetapp
    ```
 
+![Captura14](images/Captura14.PNG)
    
 
 5. List the images again to verify that the image for the *microsoft/dotnet-samples* web app has disappeared.
@@ -153,5 +172,5 @@ In this demo, you will learn to perform the following actions:
    docker image list
    ```
 
-   
+   ![Captura15](images/Captura15.PNG)
 

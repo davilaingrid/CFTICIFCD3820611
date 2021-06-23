@@ -38,6 +38,7 @@ ation> in the command below with your own values.
 az group create --name myResourceGroup01 --location francecentral
 ```
 
+![Captura](images/Captura.PNG)
 
 
 1. Create a basic container registry. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. In the following example, *myContainerRegistry007* is used. Update this to a unique value.
@@ -75,7 +76,8 @@ az group create --name myResourceGroup01 --location francecentral
    }
    ```
 
-   
+![Captura1](images/Captura1.PNG)
+
 
 ❗️ **Important:** Throughout the rest of this demo myCRbmv is a placeholder for the container registry name you created. You'll need to use that name throughout the rest of the demo.
 
@@ -101,7 +103,16 @@ az group create --name myResourceGroup01 --location francecentral
    docker pull hello-world
    ```
 
-   
+![Captura6](images/Captura6.PNG)
+
+![Captura7](images/Captura7.PNG)
+
+![Captura8](images/Captura8.PNG)
+
+![Captura9](images/Captura9.PNG)
+
+![Captura10](images/Captura10.PNG)
+
 
 3. Tag the image using the docker tag command. Before you can push an image to your registry, you must tag it with the fully qualified name of your ACR login server. The login server name is in the format myCRbmv.azurecr.io (all lowercase).
 
@@ -111,7 +122,7 @@ az group create --name myResourceGroup01 --location francecentral
    docker tag hello-world myCRbmv.azurecr.io/hello-world:v1
    ```
 
-   
+
 
 4. Finally, use docker push to push the image to the ACR instance. This example creates the **hello-world** repository, containing the hello-world:v1 image.
 
@@ -121,7 +132,34 @@ az group create --name myResourceGroup01 --location francecentral
    docker push myCRbmv.azurecr.io/hello-world:v1
    ```
 
-   
+![Captura11](images/Captura11.PNG)
+
+![Captura12](images/Captura12.PNG)
+
+![Captura13](images/Captura13.PNG)
+
+![Captura14](images/Captura14.PNG)
+
+![Captura15](images/Captura15.PNG)
+
+![Captura16](images/Captura16.PNG)
+
+![Captura17](images/Captura17.PNG)
+
+![Captura18](images/Captura18.PNG)
+
+![Captura19](images/Captura19.PNG)
+
+![Captura20](images/Captura20.PNG)
+
+![Captura21](images/Captura21.PNG)
+
+![Captura22](images/Captura21.PNG)
+
+![Captura23](images/Captura23.PNG)
+
+![Captura24](images/Captura24.PNG)
+
 
 5. After pushing the image to your container registry, remove the hello-world:v1 image from your local Docker environment.
 

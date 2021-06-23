@@ -51,3 +51,7 @@ When no longer needed, you can delete the resource group, virtual machine, and a
 ```
 Remove-AzResourceGroup -Name "<myResourceGroup>"
 ```
+
+![Captura](images/Captura.PNG)
+
+![Captura1](images/Captura1.PNG)

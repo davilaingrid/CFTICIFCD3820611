@@ -23,7 +23,7 @@ In this demo, you will learn to perform the following actions:
    git clone https://github.com/MicrosoftDocs/mslearn-hotel-reservation-system.git
    ```
 
-   
+![Captura](images/Captura.PNG)
 
 2. Move to the src folder.
 
@@ -82,6 +82,8 @@ In this demo, you will learn to perform the following actions:
 
 1. Save the file and close your text editor.
 
+![Captura1](images/Captura1.PNG)
+
 #### Build and deploy the image using the Dockerfile
 
 1. At the command prompt, run the following command to build the image for the sample app using the Dockerfile and store it locally. Don't forget the . at the end of the command.
@@ -92,7 +94,7 @@ In this demo, you will learn to perform the following actions:
    docker build -t reservationsystem .
    ```
 
-   
+   ![Captura2](images/Captura2.PNG)
 
    ✔️ **Note:** A warning about file and directory permissions will be displayed when the process completes. You can ignore these warnings for the purposes of this exercise.
 
@@ -104,6 +106,7 @@ In this demo, you will learn to perform the following actions:
    docker image list
    ```
 
+![Captura3](images/Captura3.PNG)
    
 
    The image will have the name reservationsystem. You'll also see an image named *microsoft/dotnet*. This image contains the .NET Core SDK and was downloaded when the reservationsystem image was built using the Dockerfile.
@@ -118,7 +121,7 @@ In this demo, you will learn to perform the following actions:
    docker run -p 8080:80 -d --name reservations reservationsystem
    ```
 
-   
+   ![Captura4](images/Captura4.PNG)
 
 2. Start a web browser and navigate to http://localhost:8080/api/reservations/1. You should see a JSON document containing the data for reservation number 1 returned by the web app. You can replace the “1” with any reservation number, and you'll see the corresponding reservation details.
 
@@ -139,7 +142,11 @@ In this demo, you will learn to perform the following actions:
    
    ```
 
-   
+   ![Captura5](images/Captura5.PNG)
+
+   ![Captura6](images/Captura6.PNG)
+
+   ![Captura7](images/Captura7.PNG)
 
 3. Stop the *reservations* container with the following command.
 
@@ -149,7 +156,9 @@ In this demo, you will learn to perform the following actions:
    docker container stop reservations
    ```
 
+![Captura8](images/Captura8.PNG)
    
+![Captura9](images/Captura9.PNG)
 
 4. Delete the *reservations* container from the local registry.
 
@@ -159,7 +168,8 @@ In this demo, you will learn to perform the following actions:
    docker rm reservations
    ```
 
-   
+![Captura10](images/Captura10.PNG)   
+
 
 5. Delete the images from the local registry.
 
@@ -169,4 +179,6 @@ In this demo, you will learn to perform the following actions:
    docker image rm <image_name>
    ```
 
-   
+   ![Captura11](images/Captura11.PNG)
+
+   ![Captura12](images/Captura12.PNG)

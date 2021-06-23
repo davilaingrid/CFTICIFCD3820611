@@ -26,3 +26,18 @@ Create a remote desktop connection to the virtual machine. These directions tell
 #### Clean up resources
 
 When no longer needed, you can delete the resource group, virtual machine, and all related resources. To do so, select the resource group for the virtual machine, select **Delete**, then confirm the name of the resource group to delete.
+
+![Captura](images/Captura.PNG)
+
+![Captura1](images/Captura1.PNG)
+
+![Captura2](images/Captura2.PNG)
+
+![Captura3](images/Captura3.PNG)
+
+![Captura4](images/Captura4.PNG)
+
+![Captura5](images/Captura5.PNG)
+
+![Captura6](images/Captura6.PNG)
+

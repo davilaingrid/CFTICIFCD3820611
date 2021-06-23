@@ -25,6 +25,8 @@ In this demo you'll learn how to perform the following actions:
    az group create --name az204-aci-rg --location <myLocation>
    ```
 
+![Captura](images/Captura.PNG)
+
 #### Create a container
 
 You create a container by providing a name, a Docker image, and an Azure resource group to the az container create command. You will expose the container to the Internet by specifying a DNS name label.
@@ -51,6 +53,10 @@ You create a container by providing a name, a Docker image, and an Azure resourc
 
    In the command above, $DNS_NAME_LABEL specifies your DNS name. The image name, **microsoft/aci-helloworld**, refers to a Docker image hosted on Docker Hub that runs a basic Node.js web application.
 
+
+![Captura1](images/Captura1.PNG)
+
+
 #### Verify the container is running
 
 1. When the az container create command completes, run az container show to check its status.
@@ -74,6 +80,26 @@ aci-demo.eastus.azurecontainer.io       		Succeeded
    ✔️ **Note:** If your container is in the **Creating** state, wait a few moments and run the command again until you see the **Succeeded** state.
 
 2. From a browser, navigate to your container's FQDN to see it running. You may get a warning that the site isn't safe.
+
+![Captura2](images/Captura2.PNG)
+
+![Captura3](images/Captura3.PNG)
+
+![Captura4](images/Captura4.PNG)
+
+![Captura5](images/Captura5.PNG)
+
+![Captura6](images/Captura6.PNG)
+
+![Captura7](images/Captura7.PNG)
+
+![Captura8](images/Captura8.PNG)
+
+![Captura9](images/Captura9.PNG)
+
+![Captura10](images/Captura10.PNG)
+
+![Captura11](images/Captura11.PNG)
 
 #### Clean up resources
 
