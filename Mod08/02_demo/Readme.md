@@ -21,7 +21,13 @@ This demo is performed in the Azure Portal.
 
    
 
-   ![](images\906120-363567.png)
+![Captura](images/Captura.PNG)
+
+
+![Captura1](images/Captura1.PNG)
+
+
+![Captura2](images/Captura2.PNG)
 
    
 
@@ -35,7 +41,8 @@ This section shows how to import and publish an OpenAPI specification backend AP
 
 2. Select **OpenAPI specification** from the list and click **Full** in the pop-up.
 
-   ![img](https://www.skillpipe.com/api/2.1/content/urn:uuid:88438492-2a00-5769-bee1-e4c9ebc889fb@2020-12-12T08:30:18Z/OEBPS/Images/906125-363572.png)
+![Captura3](images/Captura3.PNG)
+
 
    You can set the API values during creation or later by going to the **Settings** tab. The red star next to a field indicates that the field is required. Use the values from the table below to fill out the form.
 
@@ -59,12 +66,36 @@ Operations can be called directly from the Azure portal, which provides a conven
 
 1. Select the API you created in the previous step (from the **APIs** tab).
 
+![Captura4](images/Captura4.PNG)
+
+
 2. Press the **Test** tab.
 
+
 3. Click on **GetSpeakers**. The page displays fields for query parameters, in this case none, and headers. One of the headers is Ocp-Apim-Subscription-Key, for the subscription key of the product that is associated with this API. The key is filled in automatically.
+
+![Captura5](images/Captura5.PNG)
+
 
 4. Press **Send**.
 
    Backend responds with **200 OK** and some data.
+
+![Captura6](images/Captura6.PNG)
+
+
+![Captura7](images/Captura7.PNG)
+
+
+![Captura8](images/Captura8.PNG)
+
+
+![Captura9](images/Captura9.PNG)
+
+
+![Captura10](images/Captura10.PNG)
+
+
+![Captura11](images/Captura11.PNG)
 
 ✔️ **Note:** We will continue to leverage this API in demos throughout the remainder of this module.
