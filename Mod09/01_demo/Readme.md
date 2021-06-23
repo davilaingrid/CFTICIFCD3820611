@@ -18,12 +18,15 @@ This demo is performed in the Cloud Shell.
 
 2. Create a resource group, replace <myRegion> with a location that makes sense for you.
 
-   
+![Captura](images/Captura.PNG)   
 
    ```
    myLocation=<myRegion>
    az group create -n az204-egdemo-rg -l $myLocation
    ```
+
+
+![Captura1](images/Captura1.PNG)
 
    
 
@@ -33,22 +36,29 @@ This demo is performed in the Cloud Shell.
 
 1. Register the Event Grid resource provider by using the az provider register command.
 
-   
+![Captura2](images/Captura2.PNG)   
 
    ```
    az provider register --namespace Microsoft.EventGrid
    ```
-
+![Captura3](images/Captura3.PNG)
    
 
-   It can take a few minutes for the registration to complete. To check the status run the command below.
+It can take a few minutes for the registration to complete. To check the status run the command below.
 
    
+Por comando Shell:
 
    ```
    az provider show --namespace Microsoft.EventGrid --query "registrationState"
    ```
 
+![Captura5](images/Captura5.PNG)
+
+
+Por el Portal de Azure:
+
+![Captura4](images/Captura4.PNG)
    
 
 #### Create a custom topic
@@ -56,7 +66,6 @@ This demo is performed in the Cloud Shell.
 1. Create a custom topic by using the az eventgrid topic create command. The script below creates a unique topic name, the name must be unique because it's part of the DNS entry.
 
    
-
    ```
    let rNum=$RANDOM*$RANDOM
    myTopicName="az204-egtopic-${rNum}"
@@ -64,6 +73,17 @@ This demo is performed in the Cloud Shell.
    ```
 
    
+![Captura6](images/Captura6.PNG)
+
+
+![Captura7](images/Captura7.PNG)
+
+
+![Captura8](images/Captura8.PNG)
+
+
+![Captura9](images/Captura9.PNG)
+
 
 #### Create a message endpoint
 
@@ -83,7 +103,30 @@ Before subscribing to the custom topic, we need to create the endpoint for the e
    echo "Your web app URL: ${mySiteURL}"
    ```
 
-   
+![Captura10](images/Captura10.PNG)
+
+
+![Captura11](images/Captura11.PNG)
+
+
+![Captura12](images/Captura12.PNG)
+
+
+![Captura13](images/Captura13.PNG)
+
+
+![Captura14](images/Captura14.PNG)
+
+
+![Captura15](images/Captura15.PNG)
+
+
+![Captura16](images/Captura16.PNG)
+
+
+![Captura17](images/Captura17.PNG)
+
+
 
 2. Navigate to the URL generated at the end of the script above to ensure the web app is running. You should see the site with no messages currently displayed.
 
@@ -107,6 +150,14 @@ You subscribe to an event grid topic to tell Event Grid which events you want to
    --endpoint $endpoint
    ```
 
+![Captura19.1](images/Captura19.1.PNG)
+
+
+![Captura19.2](images/Captura19.2.PNG)
+
+
+![Captura19.3](images/Captura19.3.PNG)
+
    
 
 2. View your web app again, and notice that a subscription validation event has been sent to it. Select the eye icon to expand the event data. Event Grid sends the validation event so the endpoint can verify that it wants to receive event data. The web app includes code to validate the subscription.
@@ -124,6 +175,12 @@ Trigger an event to see how Event Grid distributes the message to your endpoint.
    key=$(az eventgrid topic key list --name $myTopicName -g az204-egdemo-rg --query "key1" --output tsv)
    ```
 
+![Captura19.4](images/Captura19.4.PNG)
+
+![Captura19.5](images/Captura19.5.PNG)
+
+![Captura18](images/Captura18.PNG)
+
    
 
 2. Create event data to send. Typically, an application or Azure service would send the event data, we're creating data for the purposes of the demo.
@@ -134,7 +191,8 @@ Trigger an event to see how Event Grid distributes the message to your endpoint.
    event='[ {"id": "'"$RANDOM"'", "eventType": "recordInserted", "subject": "myapp/vehicles/motorcycles", "eventTime": "'`date +%Y-%m-%dT%H:%M:%S%z`'", "data":{ "make": "Contoso", "model": "Northwind"},"dataVersion": "1.0"} ]'
    ```
 
-   
+![Captura19.6](images/Captura19.6.PNG)
+
 
 3. Use curl to send event to the topic.
 
@@ -143,6 +201,8 @@ Trigger an event to see how Event Grid distributes the message to your endpoint.
    ```
    curl -X POST -H "aeg-sas-key: $key" -d "$event" $endpoint
    ```
+
+![Captura19.7](images/Captura19.7.PNG)
 
    
 
@@ -166,4 +226,13 @@ Trigger an event to see how Event Grid distributes the message to your endpoint.
    }
    ```
 
-   
+![Captura19](images/Captura19.PNG)
+
+![Captura20](images/Captura20.PNG)
+
+![Captura21](images/Captura21.PNG)
+
+![Captura22](images/Captura22.PNG)
+
+![Captura23](images/Captura23.PNG)
+
