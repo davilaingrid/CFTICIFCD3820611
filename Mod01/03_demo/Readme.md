@@ -29,12 +29,11 @@ This demo shows you how to deploy your app to Azure App Service from a local Git
 
 In the Cloud Shell run the following commands to create the web app and the necessary resources:
 
+
 1. Create a resource group:
 
-   ```
 az group create --location <MyLocation> --name <MyResourceGroup>
-   ```
-   
+
 ![Captura3](images/Captura3.PNG)
 
 2. Create an app service plan:
@@ -46,6 +45,7 @@ az group create --location <MyLocation> --name <MyResourceGroup>
 ![Captura4](images/Captura4.PNG)
 
 ![Captura5](images/Captura5.PNG)
+
 
 3. Create the web app:
 
@@ -91,9 +91,7 @@ The first two steps in this section are performed in the Cloud Shell, the third 
 
 2. Get the web app deployment URL, the deployment URL is used in the Git Bash window to connect your local Git repository to the web app:
 
-   ```
 az webapp deployment source config-local-git --name <MyUniqueApp> --resource-group <MyResourceGroup>
-   ```
    
 
    The command will return JSON similar to the example below, you'll use the URL in the Git Bash window in the next step.
