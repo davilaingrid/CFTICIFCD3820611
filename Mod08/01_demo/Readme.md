@@ -27,6 +27,7 @@ This demo is performed in the Cloud Shell.
    az group create -n az204-apim-rg -l $myLocation
    ```
 
+![Captura](images/Captura.PNG)
    
 
 2. Create an APIM instance. The name of your APIM instance needs to be unique. The first line in the example below generates a unique name. You also need to supply an email address.
@@ -41,6 +42,21 @@ This demo is performed in the Cloud Shell.
        --sku-name Consumption
    ```
 
+![Captura1](images/Captura1.PNG)
+
    
 
    ✔️ **Note:** Azure will send a notification to the email addres supplied above when the resource has been provisioned.
+
+
+![Captura2](images/Captura2.PNG)
+
+
+![Captura3](images/Captura3.PNG)
+
+
+![Captura4](images/Captura4.PNG)
+
+
+![Captura5](images/Captura5.PNG)
+
