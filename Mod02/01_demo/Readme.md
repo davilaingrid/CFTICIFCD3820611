@@ -89,7 +89,7 @@ A function is created using a language-specific template for an HTTP triggered f
 
 2. In the dialog box that appears select **default (Function key)**, and then click **Copy**.
 
-3. Paste the function URL into your browser's address bar. Add the query string value &name=<yourname> to the end of this URL and press the Enter key on your keyboard to execute the request. You should see the response returned by the function displayed in the browser.![demo0206](demo0206.png)
+3. Paste the function URL into your browser's address bar. Add the query string value &name=<yourname> to the end of this URL and press the Enter key on your keyboard to execute the request. You should see the response returned by the function displayed in the browser.
 
 4. When your function runs, trace information is written to the logs. To see the trace output from the previous execution, return to your function in the portal and click the arrow at the bottom of the screen to expand the **Logs**.
 
