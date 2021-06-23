@@ -67,4 +67,8 @@ To create a block blob storage account in the Azure portal, follow these steps:
    -Location $location -Kind "BlockBlobStorage" -SkuName "Premium_LRS"
    ```
 
-   
+   ![Captura](images/Captura.PNG)
+
+   ![Captura1](images/Captura1.PNG)
+
+   ![Captura2](images/Captura2.PNG)
