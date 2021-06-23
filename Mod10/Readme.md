@@ -37,6 +37,8 @@ Manage a queue by using Storage Explorer.
 
 ![Captura9](ZZ-lab/Captura9.PNG)
 
+![Captura10](ZZ-lab/Captura10.PNG)
+
 ![Captura11](ZZ-lab/Captura11.PNG)
 
 ![Captura12](ZZ-lab/Captura12.PNG)
