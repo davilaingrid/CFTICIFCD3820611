@@ -36,7 +36,13 @@ You must have a function app to host the execution of your functions. A function
 
    
 
-5. Select **Review + Create** to review the app configuration ![demo0201](demo0201.png)selections.
+5. Select **Review + Create** to review the app configuration    ![Captura](images/Captura.PNG)
+selections.
+
+![Captura1](images/Captura1.PNG)
+
+![Captura2](images/Captura2.PNG)
+
 
 6. Select **Create** to provision and deploy the function app. When the deployment is complete select **Go to resource** to view your new function app.
 
@@ -46,7 +52,12 @@ Next, you'll create a function in the new function app.
 
 1. Expand your new function app, then select the **+** button next to **Functions**.
 
-   ![demo0202](demo0202.png)
+![Captura3](images/Captura3.PNG)
+
+![Captura4](images/Captura4.PNG)
+
+![Captura5](images/Captura5.PNG)
+
 
 2. Select the **In-portal** development environment, and select **Continue**.
 
@@ -56,9 +67,23 @@ A function is created using a language-specific template for an HTTP triggered f
 
 ##### Test the function
 
-![demo0204](demo0204.png)
+![Captura6](images/Captura6.PNG)
 
-![demo0205](demo0205.png)
+![Captura7](images/Captura7.PNG)
+
+![Captura8](images/Captura8.PNG)
+
+![Captura8.1](images/Captura8.1.PNG)
+
+![Captura9](images/Captura9.PNG)
+
+![Captura10](images/Captura10.PNG)
+
+![Captura11](images/Captura11.PNG)
+
+![Captura12](images/Captura12.PNG)
+
+
 
 1. In your new function, click **</> Get function URL** at the top right.
 
@@ -71,3 +96,25 @@ A function is created using a language-specific template for an HTTP triggered f
 #### Clean up resources
 
 You can clean up the resources created in this demo simply by deleting the resource group that was created early in the demo.
+
+![Captura13](images/Captura13.PNG)
+
+![Captura14](images/Captura14.PNG)
+
+![Captura15](images/Captura15.PNG)
+
+![Captura16](images/Captura16.PNG)
+
+![Captura17](images/Captura17.PNG)
+
+![Captura18](images/Captura18.PNG)
+
+![Captura19](images/Captura19.PNG)
+
+![Captura20](images/Captura20.PNG)
+
+![Captura21](images/Captura21.PNG)
+
+![Captura22](images/Captura22.PNG)
+
+![Captura23](images/Captura23.PNG)
