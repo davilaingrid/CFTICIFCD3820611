@@ -29,8 +29,8 @@
 | Mod 08          | 2    | docs/mod08_02_Import an API by using the Azure  Portal   |      |
 | Mod 08          | 3    | docs/mod08_03_Create and publish a product               |      |
 | Mod 08          | 4    | docs/mod08_04_Transform your API by using policies       |      |
-| Mod 09          | 1    | docs/mod09_01_Create a Logic App using the Azure  Portal |      |
-| Mod 10:         | 1    | docs/mod10_01_Route custom events to web endpoint by  using the Azure CLI commands and Event Grid |      |
-| Mod 11:         | 1    | docs/mod11_01_Use .NET Core to send and receive messages  from a Service Bus queue |      |
-| Mod 12:         | 1    | docs/mod12_01_Instrument an ASP.NET Core app for  monitoring in Application Insights |      |
-| Mod 13:         | 1    | docs/mod13_01_Connect an app to Azure Cache for Redis by  using .NET Core |      |
+| Mod 09:         | 1    | docs/mod09_01_Route custom events to web endpoint by  using the Azure CLI commands and Event Grid |      |
+| Mod 10:         | 1    | docs/mod10_01_Use .NET Core to send and receive messages  from a Service Bus queue |      |
+| Mod 11:         | 1    | docs/mod11_01_Instrument an ASP.NET Core app for  monitoring in Application Insights |      |
+| Mod 12:         | 1    | docs/mod12_01_Connect an app to Azure Cache for Redis by  using .NET Core |      |
+| LogicApps       | 1    | docs/LogicApps_01_Create a Logic App using the Azure  Portal |      |
