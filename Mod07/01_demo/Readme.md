@@ -31,7 +31,10 @@ This demo is performed in either the Cloud Shell or a local Azure CLI installati
    $myLocation="<myLocation>"
    ```
 
-   
+
+![Captura](images/Captura.PNG)
+
+
 
 2. Create a resource group.
 
@@ -40,6 +43,8 @@ This demo is performed in either the Cloud Shell or a local Azure CLI installati
    ```
    az group create --name $myResourceGroup --location $myLocation
    ```
+
+![Captura1](images/Captura1.PNG)
 
    
 
@@ -51,9 +56,16 @@ This demo is performed in either the Cloud Shell or a local Azure CLI installati
    az keyvault create --name $myKeyVault --resource-group $myResourceGroup --location $myLocation
    ```
 
-   
+   ![Captura2](images/Captura2.PNG)
+
 
    ✔️ **Note:** This can take a few minutes to run.
+
+
+![Captura3](images/Captura3.PNG)
+
+![Captura4](images/Captura4.PNG)
+
 
 #### Add and retrieve a secret
 
@@ -61,12 +73,14 @@ To add a secret to the vault, you just need to take a couple of additional steps
 
 1. Create a secret. Let's add a password that could be used by an app. The password will be called **ExamplePassword** and will store the value of **hVFkk965BuUv** in it.
 
+
    
 
    ```
    az keyvault secret set --vault-name $myKeyVault --name "ExamplePassword" --value "hVFkk965BuUv"
    ```
 
+![Captura5](images/Captura5.PNG)
    
 
 2. Retrieve the secret.
@@ -87,9 +101,19 @@ To add a secret to the vault, you just need to take a couple of additional steps
    "value": "hVFkk965BuUv"
    ```
 
-   
 
-You have created a Key Vault, stored a secret, and retrieved it.
+![Captura6](images/Captura6.PNG)
+
+
+![Captura7](images/Captura7.PNG)
+
+
+![Captura8](images/Captura8.PNG)   
+
+
+![Captura9](images/Captura9.PNG)
+
+
 
 #### Clean up resources
 
