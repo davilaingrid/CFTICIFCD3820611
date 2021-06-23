@@ -82,3 +82,10 @@ Add data to your new database using Data Explorer.
 4. Select **New Document** again, and create and save another document with a unique id, and any other properties and values you want. Your documents can have any structure, because Azure Cosmos DB doesn't impose any schema on your data.
 
 ❗️ **Important:** Don't delete the Azure Cosmos DB account or the az204-cosmos-rg resource group just yet, we'll use it for another demo later in this lesson.
+
+
+![Captura](images/Captura.PNG)
+
+![Captura1](images/Captura1.PNG)
+
+![Captura2](images/Captura2.PNG)

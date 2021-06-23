@@ -234,3 +234,11 @@ This demo is performed in the Visual Studio code on the virtual machine.
 #### Wrapping up
 
 You can now safely delete the *az204-cosmos-rg* resource group from your account.
+
+![Captura](images/Captura.PNG)
+
+![Captura1](images/Captura1.PNG)
+
+![Captura2](images/Captura2.PNG)
+
+![Captura3](images/Captura3.PNG)
