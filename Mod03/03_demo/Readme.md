@@ -19,7 +19,6 @@ Perform the following actions to prepare Azure, and your local environment, for 
 
    We need a storage account created to use in the application. You can either create it through the portal or use the following PowerShell script in the Cloud Shell. The script will prompt you for a region for the resources and then create resources needed for the demo.
 
-   
 
    ```
    # Prompts for a region for the resources to be created
