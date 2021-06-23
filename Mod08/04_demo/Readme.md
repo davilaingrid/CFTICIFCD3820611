@@ -20,7 +20,6 @@ This demo is performed in the Azure Portal.
 
 1. In the Azure portal, search for and select **API Management services**.
 
-   ![img](Images\906120-363567.png)
 
 2. On the **API Management** screen, select the API Management instance you created in the *Create an APIM instance by using Azure CLI* demo.
 
@@ -61,3 +60,23 @@ This demo is performed in the Azure Portal.
 3. Press the **Send** button, at the bottom of the screen.
 
 The response no longer includes platform information related to your API.
+
+![Captura](images/Captura.PNG)
+
+![Captura1](images/Captura1.PNG)
+
+![Captura2](images/Captura2.PNG)
+
+![Captura3](images/Captura3.PNG)
+
+![Captura4](images/Captura4.PNG)
+
+![Captura5](images/Captura5.PNG)
+
+![Captura6](images/Captura6.PNG)
+
+![Captura7](images/Captura7.PNG)
+
+![Captura8](images/Captura8.PNG)
+
+![Captura9](images/Captura9.PNG)
