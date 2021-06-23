@@ -135,3 +135,26 @@ When you registered the *az204appregdemo* app it automatically generated an API 
    Token:  eyJ0eXAiOiJKV1QiLCJub25jZSI6IlVhU.....
 
 ✔️ **Note:** We'll be reusing this project in the *Retrieving profile information by using the Microsoft Graph SDK* demo in the next lesson.
+
+![Captura2](images/Captura2.PNG)
+
+![Captura3](images/Captura3.PNG)
+
+![Captura4](images/Captura4.PNG)
+
+![Captura5](images/Captura5.PNG)
+
+![Captura6](images/Captura6.PNG)
+
+![Captura6.1](images/Captura6.1.PNG)
+
+![Captura7](images/Captura7.PNG)
+
+![Captura8](images/Captura8.PNG)
+
+![Captura9](images/Captura9.PNG)
+
+![Captura10](images/Captura10.PNG)
+
+![Captura11](images/Captura11.PNG)
+

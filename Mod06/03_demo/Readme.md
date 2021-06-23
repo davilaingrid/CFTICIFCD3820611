@@ -90,3 +90,24 @@ This demo is performed in Visual Studio Code. We'll be re-using *az204-authdemo*
 3. You should see the following results in the console.
 
    Display Name:  <display name associated with the account>
+
+
+![Captura0](images/Captura0.PNG)
+
+
+![Captura](images/Captura.PNG)
+
+
+![Captura1](images/Captura1.PNG)
+
+
+![Captura2](images/Captura2.PNG)
+
+
+![Captura3](images/Captura3.PNG)
+
+
+![Captura4](images/Captura4.PNG)
+
+
+![Captura5](images/Captura5.PNG)
