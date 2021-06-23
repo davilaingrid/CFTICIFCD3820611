@@ -59,10 +59,6 @@ Perform the following actions to prepare Azure, and your local environment, for 
 
 ![Captura7](images/Captura7.PNG)
 
-![Captura8](images/Captura8.PNG)
-
-![Captura9](images/Captura9.PNG)
-
 ![Captura10](images/Captura10.PNG)
 
 ![Captura11](images/Captura11.PNG)
