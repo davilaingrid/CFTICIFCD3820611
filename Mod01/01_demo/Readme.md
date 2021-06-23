@@ -27,61 +27,20 @@ In this demo you will learn how to create a Web App by using the Azure Portal.
 
 5. Navigate to the **Monitoring** tab at the top of the page and toggle **Enable Application Insights** to **No**.
 
-   ![](Captura.png)
-
-   
-
-   ![](Captura1.png)
-
-
-
-![](Captura2.png)
-
-
-
-![](Captura3.png)
-
 6. Select **Review and Create** to navigate to the review page, then select **Create** to create the app. The portal will display the deployment page, where you can view the status of your deployment.
 
 7. Once the app is ready you can select the **Go to resource** button and the portal will display the web app overview page. To preview your new web app's default content, select its URL at the top right. The placeholder page that loads indicates that your web app is up and running and ready to receive deployment of your app's code.
 
-![](Captura4.png)
+![Captura](images/Captura.PNG)
 
-![](Captura5.png)
+![Captura1](images/Captura1.PNG)
 
+![Captura2](images/Captura2.PNG)
 
+![Captura3](images/Captura3.PNG)
 
-![](Captura6.png)
+![Captura4](images/Captura4.PNG)
 
+![Captura5](images/Captura5.PNG)
 
-
-
-
-
-
-![](Captura8.png)
-
-
-
-![](Captura9.png)
-
-
-
-![](Captura10.png)
-
-
-
-![](Captura11.png)
-
-
-
-![](Captura12.png)
-
-
-
-![](Captura13.png)
-
-
-
-![](Captura14.png)
-
+![Captura6](images/Captura6.PNG)

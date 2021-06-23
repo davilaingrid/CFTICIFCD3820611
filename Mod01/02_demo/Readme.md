@@ -25,7 +25,6 @@ This demo is performed in the Cloud Shell using the Bash environment.
 
 1. In the Cloud Shell, create a *demo* directory and then change to it.
 
-   ![](Captura2.1.png)
 
    ```
    mkdir demoHTML
@@ -41,7 +40,7 @@ This demo is performed in the Cloud Shell using the Bash environment.
    git clone https://github.com/Azure-Samples/html-docs-hello-world.git
    ```
 
-   ![](Captura2.2.png)
+![Captura1](images/Captura1.PNG)
 
 
 
@@ -57,7 +56,6 @@ This demo is performed in the Cloud Shell using the Bash environment.
    az webapp up --location <region> --name <app_name> --html
    ```
 
-   ![](Captura2.3.png)
 
    This command may take a few minutes to run. While running, it displays information similar to the example below. Make a note of the resourceGroup value. You need it for the clean up resources section.
 
@@ -77,19 +75,21 @@ This demo is performed in the Cloud Shell using the Bash environment.
    }
    ```
 
-   ![](Captura2.4.png)
+   ![Captura3](images/Captura3.PNG)
 
    
 
-   ![](Captura2.5.png)
+   ![Captura4](images/Captura4.PNG)
 
    
+    ![Captura5](images/Captura5.PNG)
 
    
 
 2. Open a browser and navigate to the app URL (http://<app_name>.azurewebsites.net) and verify the app is running. Leave the browser open on the app for the next section.
 
-   ![](Captura2.7.png)
+   
+![Captura6](images/Captura6.PNG)
 
 
 
@@ -101,17 +101,29 @@ This demo is performed in the Cloud Shell using the Bash environment.
 
 3. Redeploy the app with the same az webapp up command. Be sure to use the same *region* and *app_name* as you used earlier.
 
-   ![](Captura7.png)
 
    ```
    az webapp up --location <region> --name <app_name> --html
    ```
 
-   ![](Captura8.png)
-
 4. Once deployment is completed switch back to the browser from step 2 in the “Create the web app” section above and refresh the page.
 
-![](demo0206.png)
+![Captura7](images/Captura7.PNG)
+
+![Captura8](images/Captura8.PNG)
+
+![Captura9](images/Captura9.PNG)
+
+![Captura10](images/Captura10.PNG)
+
+![Captura11](images/Captura11.PNG)
+
+![Captura12](images/Captura12.PNG)
+
+![Captura13](images/Captura13.PNG)
+
+![Captura14](images/Captura14.PNG)
+
 
 #### Clean up resources
 
@@ -121,4 +133,4 @@ This demo is performed in the Cloud Shell using the Bash environment.
    az group delete --name <resource_group> --no-wait --yes
    ```
 
-![](Captura2.6.png)
+![Captura15](images/Captura15.PNG)

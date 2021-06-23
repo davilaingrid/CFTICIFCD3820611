@@ -12,11 +12,14 @@ This demo shows you how to deploy your app to Azure App Service from a local Git
    git clone https://github.com/Azure-Samples/html-docs-hello-world.git
    ```
 
-   ![demo0301](demo0301.png)
+![Captura1](images/Captura1.PNG)
+
 
    Later in the demo you'll be entering more commands in the Git Bash window so be sure to leave it open.
 
-   ![demo0301](demo0302.png)
+   
+![Captura2](images/Captura2.PNG)
+
 
 2. Launch the Azure Cloud Shell and be sure to select the **Bash** environment.
 
@@ -32,7 +35,7 @@ In the Cloud Shell run the following commands to create the web app and the nece
 az group create --location <MyLocation> --name <MyResourceGroup>
    ```
    
-   ![demo0301](demo0304.png)
+![Captura3](images/Captura3.PNG)
 
 2. Create an app service plan:
 
@@ -40,7 +43,9 @@ az group create --location <MyLocation> --name <MyResourceGroup>
    az appservice plan create --name <MyPlan> --resource-group <MyResourceGroup>
    ```
 
-   ![demo0301](demo0305.png)
+![Captura4](images/Captura4.PNG)
+
+![Captura5](images/Captura5.PNG)
 
 3. Create the web app:
 
@@ -48,7 +53,10 @@ az group create --location <MyLocation> --name <MyResourceGroup>
    az webapp create --name <MyUniqueApp> --resource-group <MyResourceGroup> --plan <MyPlan>  --deployment-local-git
    ```
    
-   ![demo0301](demo0306.png)
+![Captura6](images/Captura6.PNG)
+
+![Captura7](images/Captura7.PNG)
+
 
 #### Deploy with Kudu build server
 
@@ -76,7 +84,10 @@ The first two steps in this section are performed in the Cloud Shell, the third 
 
    Record your username and password to use to deploy your web apps.
 
-   ![demo0301](demo0309.png)
+![Captura9](images/Captura9.PNG)
+
+![Captura10](images/Captura10.PNG)
+
 
 2. Get the web app deployment URL, the deployment URL is used in the Git Bash window to connect your local Git repository to the web app:
 
@@ -84,7 +95,6 @@ The first two steps in this section are performed in the Cloud Shell, the third 
 az webapp deployment source config-local-git --name <MyUniqueApp> --resource-group <MyResourceGroup>
    ```
    
-   ![demo0301](demo0308.png)
 
    The command will return JSON similar to the example below, you'll use the URL in the Git Bash window in the next step.
 
@@ -97,6 +107,10 @@ az webapp deployment source config-local-git --name <MyUniqueApp> --resource-gro
    ```
 az webapp deployment source show --name <MyUniqueApp> --resource-group <MyResourceGroup>
    ```
+
+![Captura11](images/Captura11.PNG)
+
+![Captura12](images/Captura12.PNG)
    
    
 
@@ -120,7 +134,11 @@ az webapp deployment source show --name <MyUniqueApp> --resource-group <MyResour
    git push azure master
    ```
    
-   ![demo0301](demo0310.png)
+   ![Captura13](images/Captura13.PNG)
+
+   ![Captura14](images/Captura14.PNG)
+
+   ![Captura15](images/Captura15.PNG)
 
 ##### What happens to my app during deployment?
 
@@ -137,7 +155,17 @@ In the Azure Portal navigate to the web app you created above:
 1. In the **Overview** section select the **URL** to verify the app was deployed successfully.
 2. Select **Deployment Center** to view deployment information.
 
-![demo0301](demo0311.png)
+![Captura16](images/Captura16.PNG)
+
+![Captura17](images/Captura17.PNG)
+
+![Captura18](images/Captura18.PNG)
+
+![Captura19](images/Captura19.PNG)
+
+![Captura20](images/Captura20.PNG)
+
+![Captura21](images/Captura21.PNG)
 
 From here you can make change to the code in the local repository and push the change to the web app.
 
@@ -148,4 +176,4 @@ In the Cloud Shell use the following command to delete the resource group and th
 ```
 az group delete --name <MyResourceGroup> --no-wait --yes
 ```
-
+![Captura22](images/Captura22.PNG)
